@@ -7,15 +7,10 @@ namespace Hallway.Player {
 	[RequireComponent (typeof (IMoveable))]
 
 	public class Player : MonoBehaviour {
-		public int id = 1;
-		public IMoveable moveBehavior;
+		private int id = 1;
 
-		void Start() {
-			moveBehavior = GetComponent<IMoveable>();
-		}
-
-		void Update() {
-			moveBehavior.move();
+		public int getId() {
+			return id;
 		}
 	}	
 }

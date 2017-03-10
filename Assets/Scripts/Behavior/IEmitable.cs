@@ -2,7 +2,7 @@
 using System.Collections;
 
 namespace Hallway.Behavior {
-	public interface IEmit {
+	public interface IEmitable {
 		void emit();
 		bool canEmit();
 	}

@@ -2,7 +2,7 @@
 using System.Collections;
 
 namespace Hallway.Behavior {
-	public class EmitObstacle : MonoBehaviour, IEmit {
+	public class EmitableObstacle : MonoBehaviour, IEmitable {
 
 		public bool _canEmit = true;
 

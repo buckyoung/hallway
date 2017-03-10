@@ -5,14 +5,14 @@ namespace Hallway.Behavior {
 	public class EmittersManager : MonoBehaviour {
 
 		private bool _shouldEmit = true;
-		private IEmit[] emitters;
+		private IEmitable[] emitters;
 
 		void Start() {
-			emitters = GetComponentsInChildren<IEmit>();
+			emitters = GetComponentsInChildren<IEmitable>();
 		}
 
 		void Update() {
-			foreach (IEmit emitter in emitters) {
+			foreach (IEmitable emitter in emitters) {
 				if (_shouldEmit && emitter.canEmit()) {
 					emitter.emit();
 
