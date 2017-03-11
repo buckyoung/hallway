@@ -6,8 +6,13 @@ using Hallway.System;
 namespace Hallway.Player {
 	public class Player : MonoBehaviour {
 		public int id = 1;
+		public AnimationCurve recovery;
+
 		private float speed = 0.4f;
-		private float __knockback = 2.0f; // TODO BUCK Knockback should be set on the obstacle 
+
+		private float secondsSinceCollided = 0.0f;
+
+		private float __knockback = 1.47f; // TODO BUCK Knockback should be set on the obstacle 
 		private float __recoverTimeAfterAction = 0.35f; // TODO BUCK This should be however long the animation takes to play
 
 		private bool canPerformAction = true;
@@ -20,16 +25,24 @@ namespace Hallway.Player {
 		}
 
 		void Update() {
+			secondsSinceCollided += Time.deltaTime;
+
+			speed = recovery.Evaluate(secondsSinceCollided);
+
 			// Constantly move to the right
 			transform.position = new Vector2(transform.position.x + Time.deltaTime * speed, transform.position.y);
 		}
 
 		void OnTriggerEnter2D(Collider2D other) {
-			// TODO BUCK Get the knockback off the obstacle
-			transform.position = new Vector2(transform.position.x - __knockback, transform.position.y);
+			if (other.tag == "obstacle") {
+				// TODO BUCK Get the knockback off the obstacle
+				transform.position = new Vector2(transform.position.x - __knockback, transform.position.y);
 
-			// Destroy the object on contact
-			Destroy(other.gameObject);
+				secondsSinceCollided = 0.0f;;
+
+				// Destroy the object on contact
+				Destroy(other.gameObject);
+			}
 		}
 
 		public int getId() {

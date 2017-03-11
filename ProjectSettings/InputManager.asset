@@ -12,7 +12,7 @@ InputManager:
     negativeButton: 
     positiveButton: w
     altNegativeButton: 
-    altPositiveButton: up
+    altPositiveButton: 
     gravity: 0
     dead: 0
     sensitivity: 0
@@ -28,7 +28,7 @@ InputManager:
     negativeButton: 
     positiveButton: s
     altNegativeButton: 
-    altPositiveButton: down
+    altPositiveButton: 
     gravity: 0
     dead: 0
     sensitivity: 0
@@ -42,7 +42,7 @@ InputManager:
     descriptiveName: Player 2's Jump
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -58,7 +58,7 @@ InputManager:
     descriptiveName: Player 2's Slide
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: down
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
