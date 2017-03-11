@@ -210,10 +210,10 @@ MonoBehaviour:
       outSlope: 0.0009881452
       tangentMode: 0
     - serializedVersion: 2
-      time: 3.5924387
-      value: 0.0028566662
-      inSlope: 0.0004904083
-      outSlope: 0.0004904083
+      time: 0.6475766
+      value: 0.01251868
+      inSlope: -0.0019597507
+      outSlope: -0.0019597507
       tangentMode: 0
     - serializedVersion: 2
       time: 14.918247
@@ -262,6 +262,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f5031c792c37a4c4eadf4aeb6dd83104, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2949827, g: 0.73311055, b: 0.9117647, a: 1}
   m_FlipX: 0
   m_FlipY: 0
