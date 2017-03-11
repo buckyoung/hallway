@@ -19,7 +19,7 @@ namespace Hallway.Behavior {
 		}
 
 		private IEnumerator endDuck() {
-			yield return new WaitForSeconds(0.4f);
+			yield return new WaitForSeconds(0.4f); // TODO BUCK scale duck speed with overall game speed
 			meshRenderer.enabled = true;
 			boxCollider.enabled = true;
 		}

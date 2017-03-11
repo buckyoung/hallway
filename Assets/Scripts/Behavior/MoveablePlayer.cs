@@ -8,9 +8,13 @@ namespace Hallway.Behavior {
 		private IDuckable duckBehavior;
 
 		void Start() {
-			playerId = GetComponent<Player.Player>().id;
+			playerId = GetComponent<Player.Player>().getId();
 			jumpBehavior = GetComponentInChildren<IJumpable>();
 			duckBehavior = GetComponentInChildren<IDuckable>();
+		}
+
+		void Update() { 
+			move(); 
 		}
 
 		public void move() {

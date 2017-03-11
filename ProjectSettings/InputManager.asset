@@ -6,11 +6,43 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: 1-JUMP
+    m_Name: 1_JUMP
     descriptiveName: Player 1's Jump
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: w
+    altNegativeButton: 
+    altPositiveButton: up
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: 1_SLIDE
+    descriptiveName: Player 1's Slide
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: s
+    altNegativeButton: 
+    altPositiveButton: down
+    gravity: 0
+    dead: 0
+    sensitivity: 0
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: 2_JUMP
+    descriptiveName: Player 2's Jump
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -22,11 +54,11 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: 1-DUCK
-    descriptiveName: Player 1's Duck
+    m_Name: 2_SLIDE
+    descriptiveName: Player 2's Slide
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: s
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0

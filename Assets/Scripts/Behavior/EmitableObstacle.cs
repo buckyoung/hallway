@@ -2,22 +2,21 @@
 using System.Collections;
 
 namespace Hallway.Behavior {
-	public class EmitObstacle : MonoBehaviour, IEmit {
+	public class EmitableObstacle : MonoBehaviour, IEmitable {
 
-		public bool _canEmit = true;
+		private bool _canEmit = true;
 
 		public void emit() {
-
-			// TODO BUCK
-			// I beleive there is a specific way we have to clean these up.
-			// Also, alternatively: we could create a pool of 20 or so to reuse
-			Instantiate(
+			GameObject resource = (GameObject)Instantiate(
 				Resources.Load("Obstacle"), 
 				transform.position,
 				Quaternion.identity
 			);
 
-			StartCoroutine(waitRandom(1, 5));
+			resource.transform.SetParent(this.transform);
+			Destroy(resource, 5);
+
+			StartCoroutine(waitRandom(1, 3));
 		}
 
 		public bool canEmit() {
