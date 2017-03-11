@@ -6,7 +6,7 @@ using Hallway.System;
 namespace Hallway.Player {
 	public class Player : MonoBehaviour {
 		public int id = 1;
-		public AnimationCurve recovery;
+		public AnimationCurve recoveryCurve;
 		public Color tintColor;
 
 		private float speed = 0.4f;
@@ -14,21 +14,33 @@ namespace Hallway.Player {
 		private float secondsSinceCollided = 0.0f;
 
 		private float __knockback = 0.5f; // TODO BUCK Knockback should be set on the obstacle 
-		private float __recoverTimeAfterAction = 0.35f; // TODO BUCK This should be however long the animation takes to play
+		private float __recoverTimeAfterAction = 0.30f; // TODO BUCK This should be however long the animation takes to play
 
 		private bool canPerformAction = true;
 		private BoxCollider2D boxCollider2D;
+
+		private Keyframe recoveryCurveLastFrame;
 
 		void Start() {
 			subscribe();
 
 			boxCollider2D = GetComponent<BoxCollider2D>();
+
+			if (recoveryCurve.length != 0) {
+				recoveryCurveLastFrame = recoveryCurve[recoveryCurve.length - 1];
+			}
 		}
 
 		void Update() {
 			secondsSinceCollided += Time.deltaTime;
 
-			speed = recovery.Evaluate(secondsSinceCollided);
+			// Ensure maximum 
+			if (secondsSinceCollided > recoveryCurveLastFrame.time) {
+				secondsSinceCollided = recoveryCurveLastFrame.time;
+			}
+
+			// Calculate speed according to the recoveryCurve
+			speed = recoveryCurve.Evaluate(secondsSinceCollided);
 
 			// Constantly move to the right
 			transform.position = new Vector2(transform.position.x + Time.deltaTime * speed, transform.position.y);

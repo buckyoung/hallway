@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794279501256710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.82, y: -0.5, z: 0}
+  m_LocalPosition: {x: 2.8, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4660761503773016}
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  recovery:
+  recoveryCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
@@ -243,7 +243,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  tintColor: {r: 0.28676468, g: 0.7638944, b: 1, a: 1}
+  tintColor: {r: 0.89705884, g: 0.64377165, b: 0.26384082, a: 1}
 --- !u!114 &114949906330857984
 MonoBehaviour:
   m_ObjectHideFlags: 1

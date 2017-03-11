@@ -189,17 +189,17 @@ Prefab:
     - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
         type: 2}
       propertyPath: tintColor.r
-      value: 0.89705884
+      value: 0.39246324
       objectReference: {fileID: 0}
     - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
         type: 2}
       propertyPath: tintColor.g
-      value: 0.64377165
+      value: 0.51559323
       objectReference: {fileID: 0}
     - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
         type: 2}
       propertyPath: tintColor.b
-      value: 0.26384082
+      value: 0.875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67cdd3ea5e0904e1187fa8610e67102e, type: 2}
@@ -242,6 +242,43 @@ Prefab:
     - target: {fileID: 4763302916114906, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23953860031160872, guid: 5cd98b013495d43d19667800447b1f8a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65e7ce121193144b3a59a1586513eb49, type: 2}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020837305770958, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020996632052634, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cd98b013495d43d19667800447b1f8a, type: 2}
@@ -292,12 +329,17 @@ Prefab:
     - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
         type: 2}
       propertyPath: tintColor.r
-      value: 0.31135914
+      value: 0.26384082
       objectReference: {fileID: 0}
     - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
         type: 2}
       propertyPath: tintColor.g
-      value: 0.28676468
+      value: 0.89705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 114522769390078978, guid: 67cdd3ea5e0904e1187fa8610e67102e,
+        type: 2}
+      propertyPath: tintColor.b
+      value: 0.37301636
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67cdd3ea5e0904e1187fa8610e67102e, type: 2}
@@ -344,3 +386,20 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5748244871b41493f9a37e382505919d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1337954051 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1575274941932800, guid: 5cd98b013495d43d19667800447b1f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 754080306}
+--- !u!114 &1337954056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337954051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0812fbbecc13a44caa61f5f58b6a3f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.7

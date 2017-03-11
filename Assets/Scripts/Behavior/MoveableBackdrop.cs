@@ -3,6 +3,9 @@ using System.Collections;
 
 namespace Hallway.Behavior {
 	public class MoveableBackdrop : MonoBehaviour, IMoveable {
+
+		public float speed = 2.0f;
+
 		private float pos = 1.0f;
 		private MeshRenderer meshRenderer;
 
@@ -17,7 +20,7 @@ namespace Hallway.Behavior {
 		public void move() {
 			// TOOD BUCK
 			// Scale obstacle speed with overall gamespeed
-			pos -= Time.deltaTime * 2;
+			pos -= Time.deltaTime * speed;
 
 			if (pos < -1.0f) {
 				pos += 1.0f;
