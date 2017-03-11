@@ -20,7 +20,7 @@ namespace Hallway.Behavior {
 					// Make a better system for managing emitters & not allowing them to fire too close to each other
 					// (This system favors the emitters earlier in the emitters[] array)
 					_shouldEmit = false;
-					StartCoroutine(wait(0.5f)); // Cant spawn 2 obstacles within X time of each other
+					StartCoroutine(wait(0.4f)); // Cant spawn 2 obstacles within X time of each other
 					// TODO BUCK scale this number ^ with speed of hallway
 				}
 			}
