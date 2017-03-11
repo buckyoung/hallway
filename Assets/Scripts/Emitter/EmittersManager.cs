@@ -4,7 +4,7 @@ using System.Collections;
 namespace Hallway.Behavior {
 	public class EmittersManager : MonoBehaviour {
 
-		private bool _shouldEmit = true;
+		public bool _shouldEmit = true;
 		private IEmitable[] emitters;
 
 		void Start() {
