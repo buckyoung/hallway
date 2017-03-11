@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 50279153123210404}
   - component: {fileID: 61914544145133130}
   m_Layer: 0
-  m_Name: Player1
-  m_TagString: Untagged
+  m_Name: Player-StoryMode
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1420431622910730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: -0.5, z: 0}
+  m_LocalPosition: {x: 2.82, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4126411942997704}
@@ -163,8 +163,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 2
-  m_Color: {r: 0.5, g: 0.12867647, b: 0.12867647, a: 1}
-  m_Intensity: 5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2.09
   m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -230,6 +230,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+  tintColor: {r: 0.28676468, g: 0.7638944, b: 1, a: 0}
 --- !u!212 &212235048478050088
 SpriteRenderer:
   m_ObjectHideFlags: 1

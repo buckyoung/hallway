@@ -7,12 +7,13 @@ namespace Hallway.Player {
 	public class Player : MonoBehaviour {
 		public int id = 1;
 		public AnimationCurve recovery;
+		public Color tintColor;
 
 		private float speed = 0.4f;
 
 		private float secondsSinceCollided = 0.0f;
 
-		private float __knockback = 1.47f; // TODO BUCK Knockback should be set on the obstacle 
+		private float __knockback = 0.5f; // TODO BUCK Knockback should be set on the obstacle 
 		private float __recoverTimeAfterAction = 0.35f; // TODO BUCK This should be however long the animation takes to play
 
 		private bool canPerformAction = true;
@@ -47,6 +48,10 @@ namespace Hallway.Player {
 
 		public int getId() {
 			return id;
+		}
+
+		public Color getTint() {
+			return tintColor;
 		}
 
 		// Private
