@@ -20,7 +20,7 @@ namespace Hallway.Behavior {
 		public void move() {
 			// TOOD BUCK
 			// Scale obstacle speed with overall gamespeed
-			pos -= Time.deltaTime * speed;
+			pos += Time.deltaTime * speed;
 
 			if (pos < -1.0f) {
 				pos += 1.0f;

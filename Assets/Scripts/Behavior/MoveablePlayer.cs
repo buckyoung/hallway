@@ -35,7 +35,7 @@ namespace Hallway.Behavior {
 			if (Input.GetButton(playerId + "-JUMP")) {
 				jumpBehavior.jump();
 				return; // Do not allow both jump and duck to be pressed simultaneously
-			}
+			} 
 
 			if (Input.GetButton(playerId + "-DUCK")) {
 				duckBehavior.duck();

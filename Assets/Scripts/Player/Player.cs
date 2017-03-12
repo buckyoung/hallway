@@ -9,11 +9,13 @@ namespace Hallway.Player {
 		public AnimationCurve recoveryCurve;
 		public Color tintColor;
 
+		private Animator animator;
+
 		private float speed = 0.4f;
 
 		private float secondsSinceCollided = 0.0f;
 
-		private float __knockback = 0.5f; // TODO BUCK Knockback should be set on the obstacle 
+		private float __knockback = 0.5f; // TODO BUCK Knockback should be set on the obstacle
 		private float __recoverTimeAfterAction = 0.30f; // TODO BUCK This should be however long the animation takes to play
 
 		private bool canPerformAction = true;
@@ -24,6 +26,7 @@ namespace Hallway.Player {
 		void Start() {
 			subscribe();
 
+			animator = GetComponentInChildren<Animator>();
 			boxCollider2D = GetComponent<BoxCollider2D>();
 
 			if (recoveryCurve.length != 0) {
@@ -34,7 +37,7 @@ namespace Hallway.Player {
 		void Update() {
 			secondsSinceCollided += Time.deltaTime;
 
-			// Ensure maximum 
+			// Ensure maximum
 			if (secondsSinceCollided > recoveryCurveLastFrame.time) {
 				secondsSinceCollided = recoveryCurveLastFrame.time;
 			}
@@ -73,6 +76,7 @@ namespace Hallway.Player {
 				if (id == playerId && canPerformAction) {
 					canPerformAction = false;
 
+					animator.SetInteger("Action", 1);
 					boxCollider2D.offset = new Vector2(0.0f, 1.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
@@ -83,6 +87,7 @@ namespace Hallway.Player {
 				if (id == playerId && canPerformAction) {
 					canPerformAction = false;
 
+					animator.SetInteger("Action", 2);
 					boxCollider2D.offset = new Vector2(0.0f, 0.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
@@ -95,5 +100,5 @@ namespace Hallway.Player {
 			boxCollider2D.offset = new Vector2(0.0f, 0.5f);
 			canPerformAction = true;
 		}
-	}	
+	}
 }
