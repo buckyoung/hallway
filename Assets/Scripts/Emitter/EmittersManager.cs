@@ -4,7 +4,7 @@ using System.Collections;
 namespace Hallway.Behavior {
 	public class EmittersManager : MonoBehaviour {
 
-		public bool __DEBUG_SHOULD_EMIT = true; // TODO BUCK Remove this debug variable
+		public bool __DEBUG_SHOULD_NOT_EMIT = false;
 
 		private bool shouldEmit = true;
 		private IEmitable[] emitters;
@@ -15,7 +15,7 @@ namespace Hallway.Behavior {
 
 		void Update() {
 			foreach (IEmitable emitter in emitters) {
-				if (__DEBUG_SHOULD_EMIT && shouldEmit && emitter.canEmit()) { // TODO BUCK Remove this debug variable
+				if (!__DEBUG_SHOULD_NOT_EMIT && shouldEmit && emitter.canEmit()) { // TODO BUCK Remove this debug variable
 					emitter.emit();
 
 					// TODO BUCK
