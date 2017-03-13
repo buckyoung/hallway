@@ -83,7 +83,6 @@ namespace Hallway.Player {
 					canPerformAction = false;
 
 					animator.SetTrigger("JumpTrigger");
-//					animator.SetInteger("Action", 1);
 					boxCollider2D.offset = new Vector2(0.0f, 1.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
@@ -95,7 +94,6 @@ namespace Hallway.Player {
 					canPerformAction = false;
 
 					animator.SetTrigger("SlideTrigger");
-//					animator.SetInteger("Action", 2);
 					boxCollider2D.offset = new Vector2(0.0f, 0.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
