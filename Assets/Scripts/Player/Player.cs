@@ -9,6 +9,8 @@ namespace Hallway.Player {
 		public AnimationCurve recoveryCurve;
 		public Color tintColor;
 
+		public bool __DEBUG_LOCK_X = false;
+
 		private Animator animator;
 
 		private float speed = 0.4f;
@@ -46,13 +48,17 @@ namespace Hallway.Player {
 			speed = recoveryCurve.Evaluate(secondsSinceCollided);
 
 			// Constantly move to the right
-			transform.position = new Vector2(transform.position.x + Time.deltaTime * speed, transform.position.y);
+			if (!__DEBUG_LOCK_X) {
+				transform.position = new Vector2(transform.position.x + Time.deltaTime * speed, transform.position.y);
+			}
 		}
 
 		void OnTriggerEnter2D(Collider2D other) {
 			if (other.tag == "obstacle") {
 				// TODO BUCK Get the knockback off the obstacle
-				transform.position = new Vector2(transform.position.x - __knockback, transform.position.y);
+				if (!__DEBUG_LOCK_X) {
+					transform.position = new Vector2(transform.position.x - __knockback, transform.position.y);
+				}
 
 				secondsSinceCollided = 0.0f;;
 
@@ -76,7 +82,8 @@ namespace Hallway.Player {
 				if (id == playerId && canPerformAction) {
 					canPerformAction = false;
 
-					animator.SetInteger("Action", 1);
+					animator.SetTrigger("JumpTrigger");
+//					animator.SetInteger("Action", 1);
 					boxCollider2D.offset = new Vector2(0.0f, 1.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
@@ -87,7 +94,8 @@ namespace Hallway.Player {
 				if (id == playerId && canPerformAction) {
 					canPerformAction = false;
 
-					animator.SetInteger("Action", 2);
+					animator.SetTrigger("SlideTrigger");
+//					animator.SetInteger("Action", 2);
 					boxCollider2D.offset = new Vector2(0.0f, 0.0f);
 
 					StartCoroutine(resetAction(__recoverTimeAfterAction));

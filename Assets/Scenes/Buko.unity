@@ -130,11 +130,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114078017426481174, guid: 9879405e7cd424b12950bf7d5f73c89b,
-        type: 2}
-      propertyPath: _shouldEmit
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9879405e7cd424b12950bf7d5f73c89b, type: 2}
   m_IsPrefabParent: 0
@@ -201,6 +196,12 @@ Prefab:
       propertyPath: tintColor.b
       value: 0.875
       objectReference: {fileID: 0}
+    - target: {fileID: 212048850361506950, guid: 67cdd3ea5e0904e1187fa8610e67102e,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300068, guid: 53c0d752dcd654db8b5c4f2fc04b2c81,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67cdd3ea5e0904e1187fa8610e67102e, type: 2}
   m_IsPrefabParent: 0
