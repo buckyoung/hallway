@@ -7,6 +7,7 @@ namespace Hallway.System {
 		public delegate void ButtonDownEvent(ButtonEventManager eventObject, int playerId);
 		public static event ButtonDownEvent onJumpButtonDown;
 		public static event ButtonDownEvent onSlideButtonDown;
+		public static event ButtonDownEvent onDiveButtonDown;
 
 		void Update() {
 			// P1 & 2: Jump Button
@@ -20,6 +21,13 @@ namespace Hallway.System {
 			for(int i = 1; i <= 2; i++) {
 				if (Input.GetButtonDown(i + "_SLIDE")) {
 					if (onSlideButtonDown != null) onSlideButtonDown(this, i);
+				}
+			}
+
+			// P1 & 2: Dive Button
+			for(int i = 1; i <= 2; i++) {
+				if (Input.GetButtonDown(i + "_DIVE")) {
+					if (onDiveButtonDown != null) onDiveButtonDown(this, i);
 				}
 			}
 		}

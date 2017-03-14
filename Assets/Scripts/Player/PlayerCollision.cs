@@ -5,8 +5,10 @@ using Hallway.System;
 
 namespace Hallway.Player {
 	public class PlayerCollision : MonoBehaviour {
-		
-		private float __knockback = 0.5f; // TODO BUCK Knockback should be set on the obstacle
+
+		public AnimationCurve knockbackCurve;
+
+		private int numberOfTimesHit = 0;
 		private PlayerMovement playerMovementManager;
 
 		void Start() {
@@ -15,9 +17,11 @@ namespace Hallway.Player {
 
 		void OnTriggerEnter2D(Collider2D other) {
 			if (other.tag == "obstacle") {
+				float knockback = knockbackCurve.Evaluate(++numberOfTimesHit);
+
 				// TODO BUCK Get the knockback off the obstacle
 				if (!playerMovementManager.__DEBUG_LOCK_X) {
-					transform.position = new Vector3(transform.position.x - __knockback, transform.position.y, transform.position.z);
+					transform.position = new Vector3(transform.position.x - knockback, transform.position.y, transform.position.z);
 				}
 					
 				playerMovementManager.resetTimeSinceCollided();

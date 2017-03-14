@@ -14,6 +14,8 @@ namespace Hallway.Behavior {
 		}
 
 		void Update() {
+			if (Time.timeSinceLevelLoad < 5.0f) { return; }
+
 			foreach (IEmit emitter in emitters) {
 				if (!__DEBUG_SHOULD_NOT_EMIT && shouldEmit && emitter.canEmit()) { // TODO BUCK Remove this debug variable
 					emitter.emit();
