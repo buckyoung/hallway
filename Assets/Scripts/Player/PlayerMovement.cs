@@ -76,6 +76,17 @@ namespace Hallway.Player {
 					StartCoroutine(resetAction(__recoverTimeAfterAction));
 				}
 			};
+
+			ButtonEventManager.onDiveButtonDown += (eventObject, pid) => {
+				if (playerId == pid && canPerformAction) {
+					canPerformAction = false;
+
+					animator.SetTrigger("DiveTrigger");
+					boxCollider2D.offset = new Vector2(0.0f, 0.75f);
+
+					StartCoroutine(resetAction(__recoverTimeAfterAction));
+				}
+			};
 		}
 
 		private IEnumerator resetAction(float seconds) {
