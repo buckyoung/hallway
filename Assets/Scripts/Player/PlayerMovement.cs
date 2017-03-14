@@ -84,7 +84,7 @@ namespace Hallway.Player {
 					animator.SetTrigger("DiveTrigger");
 					boxCollider2D.offset = new Vector2(0.0f, 0.75f);
 
-					StartCoroutine(resetAction(__recoverTimeAfterAction));
+					StartCoroutine(resetAction(__recoverTimeAfterAction * 2));
 				}
 			};
 		}

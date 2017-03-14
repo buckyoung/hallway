@@ -219,7 +219,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Dive
-  m_Speed: 2.2
+  m_Speed: 2.777
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101122762229319872}
@@ -243,7 +243,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Slide
-  m_Speed: 4.1
+  m_Speed: 4.72
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101903254989023754}
@@ -267,7 +267,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Jump
-  m_Speed: 2.2
+  m_Speed: 2.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101679801601265434}
