@@ -7,6 +7,8 @@ namespace Hallway.Player {
 
 		private float notMaxZ = -1.0f;
 		private float maxZ = -2.0f;
+		private float notMaxY = 0.0f;
+		private float maxY = -0.05f;
 
 		void Update() {
 			// Determine who is in front and change their Z value 
@@ -24,8 +26,8 @@ namespace Hallway.Player {
 				}
 			}
 
-			notMax.position = new Vector3(notMax.position.x, 0.0f, notMaxZ);
-			max.position = new Vector3(max.position.x, -0.05f, maxZ);
+			notMax.position = new Vector3(notMax.position.x, notMaxY, notMaxZ);
+			max.position = new Vector3(max.position.x, maxY, maxZ);
 		}
 	}
 }

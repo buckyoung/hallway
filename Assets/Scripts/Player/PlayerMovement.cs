@@ -11,7 +11,7 @@ namespace Hallway.Player {
 		private Animator animator;
 		private float speed = 0.4f;
 		private float timeSinceCollided = 0.0f;
-		private float __recoverTimeAfterAction = 0.30f; // TODO BUCK This should be however long the animation takes to play
+		private float animationLength = 0.30f; // TODO BUCK This should be however long the animation takes to play
 		private bool canPerformAction = true;
 		private BoxCollider2D boxCollider2D;
 		private Keyframe recoveryCurveLastFrame;
@@ -62,7 +62,7 @@ namespace Hallway.Player {
 					animator.SetTrigger("JumpTrigger");
 					boxCollider2D.offset = new Vector2(0.0f, 1.0f);
 
-					StartCoroutine(resetAction(__recoverTimeAfterAction));
+					StartCoroutine(resetAction(animationLength));
 				}
 			};
 
@@ -73,7 +73,7 @@ namespace Hallway.Player {
 					animator.SetTrigger("SlideTrigger");
 					boxCollider2D.offset = new Vector2(0.0f, 0.0f);
 
-					StartCoroutine(resetAction(__recoverTimeAfterAction));
+					StartCoroutine(resetAction(animationLength));
 				}
 			};
 
@@ -84,7 +84,7 @@ namespace Hallway.Player {
 					animator.SetTrigger("DiveTrigger");
 					boxCollider2D.offset = new Vector2(0.0f, 0.75f);
 
-					StartCoroutine(resetAction(__recoverTimeAfterAction * 2));
+					StartCoroutine(resetAction(animationLength * 2));
 				}
 			};
 		}
