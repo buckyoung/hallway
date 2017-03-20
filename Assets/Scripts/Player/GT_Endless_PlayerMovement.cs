@@ -4,17 +4,13 @@ using Hallway.Behavior;
 using Hallway.System;
 
 namespace Hallway.Player {
-	public class PlayerMovement : MonoBehaviour {
-		public AnimationCurve recoveryCurve;
+	public class GT_Endless_PlayerMovement : MonoBehaviour, IPlayerMovement {
 		public bool __DEBUG_LOCK_X = false;
 
 		private Animator animator;
-		private float speed = 0.4f;
-		private float timeSinceCollided = 0.0f;
 		private float animationLength = 0.30f; // TODO BUCK This should be however long the animation takes to play
 		private bool canPerformAction = true;
 		private BoxCollider2D boxCollider2D;
-		private Keyframe recoveryCurveLastFrame;
 		private int playerId; 
 
 		void Start() {
@@ -24,31 +20,14 @@ namespace Hallway.Player {
 
 			animator = GetComponentInChildren<Animator>();
 			boxCollider2D = GetComponent<BoxCollider2D>();
-
-			if (recoveryCurve.length != 0) {
-				recoveryCurveLastFrame = recoveryCurve[recoveryCurve.length - 1];
-			}
 		}
 
-		void Update() {
-			timeSinceCollided += Time.deltaTime;
-
-			// Ensure maximum
-			if (timeSinceCollided > recoveryCurveLastFrame.time) {
-				timeSinceCollided = recoveryCurveLastFrame.time;
-			}
-
-			// Calculate speed according to the recoveryCurve
-			speed = recoveryCurve.Evaluate(timeSinceCollided);
-
-			// Constantly move to the right
-			if (!__DEBUG_LOCK_X) {
-				transform.position = new Vector3(transform.position.x + Time.deltaTime * speed, transform.position.y, transform.position.z);
-			}
+		public bool DEBUG_getLockX() {
+			return __DEBUG_LOCK_X;
 		}
 
 		public void resetTimeSinceCollided() {
-			timeSinceCollided = 0.0f;
+			// do nothing
 		}
 
 		//
