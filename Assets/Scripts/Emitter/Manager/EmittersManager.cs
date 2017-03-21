@@ -5,6 +5,7 @@ namespace Hallway.Behavior {
 	public class EmittersManager : MonoBehaviour {
 
 		public bool __DEBUG_SHOULD_NOT_EMIT = false;
+		public float __DEBUG_FREE_TIME = 5.0f;
 
 		private bool shouldEmit = true;
 		private IEmit[] emitters;
@@ -14,7 +15,7 @@ namespace Hallway.Behavior {
 		}
 
 		void Update() {
-			if (Time.timeSinceLevelLoad < 5.0f) { return; }
+			if (Time.timeSinceLevelLoad < __DEBUG_FREE_TIME) { return; }
 
 			foreach (IEmit emitter in emitters) {
 				if (!__DEBUG_SHOULD_NOT_EMIT && shouldEmit && emitter.canEmit()) { // TODO BUCK Remove this debug variable

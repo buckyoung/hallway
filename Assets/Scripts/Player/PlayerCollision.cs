@@ -9,13 +9,13 @@ namespace Hallway.Player {
 		public AnimationCurve knockbackCurve;
 
 		private int numberOfTimesHit = 0;
+
 		private Animator animator;
-		private PlayerMovement playerMovementManager;
+		private IPlayerMovement playerMovementManager;
 
 		void Start() {
 			animator = GetComponentInChildren<Animator>();
-
-			playerMovementManager = GetComponent<PlayerMovement>();
+			playerMovementManager = GetComponent<IPlayerMovement>();
 		}
 
 		void OnTriggerEnter2D(Collider2D other) {
@@ -23,7 +23,7 @@ namespace Hallway.Player {
 				float knockback = knockbackCurve.Evaluate(++numberOfTimesHit);
 
 				// TODO BUCK Get the knockback off the obstacle
-				if (!playerMovementManager.__DEBUG_LOCK_X) {
+				if (!playerMovementManager.DEBUG_getLockX()) {
 					transform.position = new Vector3(transform.position.x - knockback, transform.position.y, transform.position.z);
 				}
 					
