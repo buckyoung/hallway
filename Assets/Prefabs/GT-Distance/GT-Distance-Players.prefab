@@ -567,6 +567,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43d82a94bf544b3bad5d63ccb83ffcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 20
+      value: 50
+      inSlope: 4.7167196
+      outSlope: 4.7167196
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114856889968221008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -591,6 +609,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43d82a94bf544b3bad5d63ccb83ffcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 20
+      value: 50
+      inSlope: 4.7167196
+      outSlope: 4.7167196
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!212 &212063956402824684
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -622,7 +658,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1dfa616edfde497ea61090cdcf91fb9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8115b02fe84f74313a5efb184dea9a1e, type: 3}
   m_Color: {r: 0.5441177, g: 0.4961073, b: 0.4961073, a: 1}
   m_FlipX: 0
   m_FlipY: 0

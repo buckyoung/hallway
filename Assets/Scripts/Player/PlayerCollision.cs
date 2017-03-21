@@ -30,7 +30,7 @@ namespace Hallway.Player {
 				playerMovementManager.resetTimeSinceCollided();
 
 				// Trigger Kneeling Animation
-				animator.SetTrigger("KneelTrigger");
+				animator.SetTrigger("RollTrigger");
 
 				// Destroy the object on contact
 				Destroy(other.gameObject);
