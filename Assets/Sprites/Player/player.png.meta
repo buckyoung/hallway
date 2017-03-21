@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d1dfa616edfde497ea61090cdcf91fb9
-timeCreated: 1489489874
+guid: 8115b02fe84f74313a5efb184dea9a1e
+timeCreated: 1490068989
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,6 +58,47 @@ TextureImporter:
     21300102: player_51
     21300104: player_52
     21300106: player_53
+    21300108: player_54
+    21300110: player_55
+    21300112: player_56
+    21300114: player_57
+    21300116: player_58
+    21300118: player_59
+    21300120: player_60
+    21300122: player_61
+    21300124: player_62
+    21300126: player_63
+    21300128: player_64
+    21300130: player_65
+    21300132: player_66
+    21300134: player_67
+    21300136: player_68
+    21300138: player_69
+    21300140: player_70
+    21300142: player_71
+    21300144: player_72
+    21300146: player_73
+    21300148: player_74
+    21300150: player_75
+    21300152: player_76
+    21300154: player_77
+    21300156: player_78
+    21300158: player_79
+    21300160: player_80
+    21300162: player_81
+    21300164: player_82
+    21300166: player_83
+    21300168: player_84
+    21300170: player_85
+    21300172: player_86
+    21300174: player_87
+    21300176: player_88
+    21300178: player_89
+    21300180: player_90
+    21300182: player_91
+    21300184: player_92
+    21300186: player_93
+    21300188: player_94
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -128,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -141,7 +182,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -154,7 +195,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -167,7 +208,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -180,7 +221,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -193,7 +234,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -206,7 +247,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -219,7 +260,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 1200
+        y: 2200
         width: 200
         height: 200
       alignment: 0
@@ -232,7 +273,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -245,7 +286,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -258,7 +299,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -271,7 +312,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -284,7 +325,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -297,7 +338,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -310,7 +351,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -323,7 +364,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 1000
+        y: 2000
         width: 200
         height: 200
       alignment: 0
@@ -336,7 +377,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -349,7 +390,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -362,7 +403,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -375,7 +416,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -388,7 +429,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -401,7 +442,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -414,7 +455,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -427,7 +468,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 800
+        y: 1800
         width: 200
         height: 200
       alignment: 0
@@ -440,7 +481,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -453,7 +494,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -466,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -479,7 +520,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -492,7 +533,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -505,7 +546,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -518,7 +559,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -531,7 +572,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 600
+        y: 1600
         width: 200
         height: 200
       alignment: 0
@@ -544,7 +585,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -557,7 +598,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -570,7 +611,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -583,7 +624,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -596,7 +637,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -609,7 +650,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -622,7 +663,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -635,7 +676,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 400
+        y: 1400
         width: 200
         height: 200
       alignment: 0
@@ -648,7 +689,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -661,7 +702,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -674,7 +715,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -687,7 +728,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -700,7 +741,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -713,7 +754,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -726,7 +767,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -739,7 +780,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1400
-        y: 200
+        y: 1200
         width: 200
         height: 200
       alignment: 0
@@ -752,7 +793,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1000
         width: 200
         height: 200
       alignment: 0
@@ -765,7 +806,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 0
+        y: 1000
         width: 200
         height: 200
       alignment: 0
@@ -778,7 +819,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 0
+        y: 1000
         width: 200
         height: 200
       alignment: 0
@@ -791,7 +832,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 600
-        y: 0
+        y: 1000
         width: 200
         height: 200
       alignment: 0
@@ -804,7 +845,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 800
-        y: 0
+        y: 1000
         width: 200
         height: 200
       alignment: 0
@@ -817,6 +858,539 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_55
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_58
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_59
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_60
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_61
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_63
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_66
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_67
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_69
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_70
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_71
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_75
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_76
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_78
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_79
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_82
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_83
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_84
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_85
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_86
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_87
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_90
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_91
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_92
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_93
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_94
+      rect:
+        serializedVersion: 2
+        x: 1200
         y: 0
         width: 200
         height: 200

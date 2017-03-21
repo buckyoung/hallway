@@ -9,9 +9,12 @@ namespace Hallway.Player {
 		public AnimationCurve knockbackCurve;
 
 		private int numberOfTimesHit = 0;
+
+		private Animator animator;
 		private IPlayerMovement playerMovementManager;
 
 		void Start() {
+			animator = GetComponentInChildren<Animator>();
 			playerMovementManager = GetComponent<IPlayerMovement>();
 		}
 
@@ -25,6 +28,9 @@ namespace Hallway.Player {
 				}
 					
 				playerMovementManager.resetTimeSinceCollided();
+
+				// Trigger Kneeling Animation
+				animator.SetTrigger("RollTrigger");
 
 				// Destroy the object on contact
 				Destroy(other.gameObject);
