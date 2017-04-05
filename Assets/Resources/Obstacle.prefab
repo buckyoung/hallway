@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2307168}
   - component: {fileID: 11462714}
   - component: {fileID: 61731113782933826}
-  - component: {fileID: 50565801753099382}
+  - component: {fileID: 50126861343721808}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: obstacle
@@ -93,7 +93,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111014}
   m_IsPrefabParent: 1
---- !u!50 &50565801753099382
+--- !u!50 &50126861343721808
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -101,7 +101,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111014}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.0001

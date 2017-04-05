@@ -130,21 +130,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224169808400801010, guid: a1ad503768fba4bcda41d0ada1eeea2e,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224169808400801010, guid: a1ad503768fba4bcda41d0ada1eeea2e,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224169808400801010, guid: a1ad503768fba4bcda41d0ada1eeea2e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1ad503768fba4bcda41d0ada1eeea2e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2105297856 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1863420487021854, guid: a1ad503768fba4bcda41d0ada1eeea2e,
+    type: 2}
+  m_PrefabInternal: {fileID: 559782088}
+--- !u!114 &2105297858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105297856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700b6188a5a3b4cfda4bcb1395e6a7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

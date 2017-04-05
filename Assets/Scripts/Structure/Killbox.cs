@@ -4,12 +4,7 @@ using UnityEngine;
 
 namespace Hallway.System {
 	public class Killbox : MonoBehaviour {
-		void OnTriggerStay2D(Collider2D other) {
-			Debug.Log(other.name);
-
-			if (other.gameObject.tag == "Player") {
-				// Emit Event
-			}
+		void OnTriggerEnter2D(Collider2D other) {
 			Destroy(other.gameObject);
 		}
 	}	

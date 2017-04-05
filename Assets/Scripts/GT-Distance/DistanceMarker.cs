@@ -10,6 +10,7 @@ namespace Hallway.DistanceMinigame {
 		private float globalMaxDistance = 0.0f;
 		private Light myLight;
 		private GUIStyle guiStyle = new GUIStyle();
+		private static int maxPlayerId = 1;
 
 		void Start() {
 			myLight = GetComponentInChildren<Light>();
@@ -47,6 +48,8 @@ namespace Hallway.DistanceMinigame {
 				playerXPosition = players[i].transform.position.x;
 
 				if (playerXPosition > globalMaxDistance) {
+					maxPlayerId = playerScripts[i].getId();
+
 					globalMaxDistance = playerXPosition;
 					this.transform.position = new Vector2(playerXPosition, transform.position.y); // Move rig with player
 					myLight.color = playerScripts[i].getTint(); // Tint the light according to the player setting the record
@@ -61,6 +64,10 @@ namespace Hallway.DistanceMinigame {
 			Vector2 pos = (Vector2)Camera.main.WorldToScreenPoint(transform.position);
 
 			GUI.Label(new Rect(pos.x - 25, Screen.height/3 * 2 + 25, 100, 100), dist.ToString(), guiStyle); 
+		}
+
+		public static int getMaxId() {
+			return maxPlayerId;
 		}
 	}
 }

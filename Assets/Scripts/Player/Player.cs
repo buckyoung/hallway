@@ -5,8 +5,10 @@ using Hallway.System;
 
 namespace Hallway.Player {
 	public class Player : MonoBehaviour {
-		public int id = 1;
-		public Color tintColor;
+		[SerializeField] private int id = 1;
+		[SerializeField] private Color tintColor;
+		public delegate void PlayerDeathEvent(Player eventObject, int id);
+		public static event PlayerDeathEvent onPlayerDeath;
 
 		public int getId() {
 			return id;
@@ -15,5 +17,9 @@ namespace Hallway.Player {
 		public Color getTint() {
 			return tintColor;
 		}
+
+		void OnDestroy() {
+			if (onPlayerDeath != null) onPlayerDeath(this, id);
+		}
 	}
-}
+}	
