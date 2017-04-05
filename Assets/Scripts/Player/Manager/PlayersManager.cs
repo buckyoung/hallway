@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Hallway.DistanceMinigame;
 
 namespace Hallway.Player {
 	public class PlayersManager : MonoBehaviour {
@@ -9,6 +10,14 @@ namespace Hallway.Player {
 		private float maxZ = -2.0f;
 		private float notMaxY = 0.0f;
 		private float maxY = -0.05f;
+		private static int numberOfPlayers = 2;
+
+
+		void Start() {
+			Player.onPlayerDeath += (eventObject, id) => {
+				numberOfPlayers--;
+			};
+		}
 
 		void Update() {
 			// Determine who is in front and change their Z value 
@@ -30,6 +39,10 @@ namespace Hallway.Player {
 				notMax.position = new Vector3(notMax.position.x, notMaxY, notMaxZ);
 				max.position = new Vector3(max.position.x, maxY, maxZ);
 			}
+		}
+
+		public static int getNumberOfPlayers() {
+			return numberOfPlayers;
 		}
 	}
 }

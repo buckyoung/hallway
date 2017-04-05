@@ -5,7 +5,7 @@ using Hallway.DistanceMinigame;
 using Hallway.Player;
 
 namespace Hallway.System {
-	public class GameManager : MonoBehaviour {
+	public class DistanceGameManager : MonoBehaviour {
 		private GUIStyle guiStyle = new GUIStyle();
 		private int winId = 0;
 
@@ -15,8 +15,15 @@ namespace Hallway.System {
 			guiStyle.clipping = TextClipping.Clip;
 
 			Player.Player.onPlayerDeath += (eventObject, id) => {
-				if (id != DistanceMarker.getMaxId()) {
-					winId = DistanceMarker.getMaxId();
+				int maxId = DistanceMarker.getMaxId();
+
+				if (id != maxId) {
+					winId = maxId;
+					return;
+				}
+
+				if (id == maxId && PlayersManager.getNumberOfPlayers() == 0) {
+					winId = maxId;	
 				}
 			};
 		}

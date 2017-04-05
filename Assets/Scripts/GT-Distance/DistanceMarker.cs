@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Hallway.Player;
 
 namespace Hallway.DistanceMinigame {
 	public class DistanceMarker : MonoBehaviour {
@@ -41,7 +42,7 @@ namespace Hallway.DistanceMinigame {
 			myLight.range = 10;
 
 			for (int i = 0; i < players.Length; i++) {
-				if (players [i] == null) {
+				if (players[i] == null) {
 					continue;
 				}
 
@@ -54,6 +55,10 @@ namespace Hallway.DistanceMinigame {
 					this.transform.position = new Vector2(playerXPosition, transform.position.y); // Move rig with player
 					myLight.color = playerScripts[i].getTint(); // Tint the light according to the player setting the record
 					myLight.range = 14; // Brighten the light upon new record
+
+					if (PlayersManager.getNumberOfPlayers() == 1) { 
+						Destroy(players[i].gameObject);
+					}
 				}
 			}
 		}
