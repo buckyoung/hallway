@@ -40,6 +40,10 @@ namespace Hallway.DistanceMinigame {
 			myLight.range = 10;
 
 			for (int i = 0; i < players.Length; i++) {
+				if (players [i] == null) {
+					continue;
+				}
+
 				playerXPosition = players[i].transform.position.x;
 
 				if (playerXPosition > globalMaxDistance) {

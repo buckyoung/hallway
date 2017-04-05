@@ -26,8 +26,10 @@ namespace Hallway.Player {
 				}
 			}
 
-			notMax.position = new Vector3(notMax.position.x, notMaxY, notMaxZ);
-			max.position = new Vector3(max.position.x, maxY, maxZ);
+			if (!(max == null || notMax == null)) {
+				notMax.position = new Vector3(notMax.position.x, notMaxY, notMaxZ);
+				max.position = new Vector3(max.position.x, maxY, maxZ);
+			}
 		}
 	}
 }
