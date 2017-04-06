@@ -175,7 +175,7 @@ Prefab:
     - target: {fileID: 114078017426481174, guid: 442fa4f6e103e4c96948cef181d62cd7,
         type: 2}
       propertyPath: __DEBUG_FREE_TIME
-      value: 0.2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 442fa4f6e103e4c96948cef181d62cd7, type: 2}

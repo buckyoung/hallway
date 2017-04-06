@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   __DEBUG_SHOULD_NOT_EMIT: 0
+  __DEBUG_FREE_TIME: 6
 --- !u!114 &114837340574323922
 MonoBehaviour:
   m_ObjectHideFlags: 1
